@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky navbar</title>
+    <style>
+        body {
+            margin: 0px;
+
+        }
+
+        header {
+            text-align: center;
+
+        }
+
+        #logo {
+            width: 250px;
+            height: auto;
+            padding-left: 490px;
+
+        }
+
+        #menu-bar {
+            text-align: center;
+            background-color: darkslategray;
+            height: 85px;
+        }
+
+        #menu-bar li {
+            display: inline-block;
+            padding: 15px 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+
+
+        }
+
+        #container {
+            text-align: center;
+            padding: 50px 100px;
+
+
+        }
+
+        #about-img {
+            width: 100%;
+        }
+        p{
+            text-align: center;
+            justify-text: center;
+        }
+        .sticky{
+            position: fixed;
+            top:o ;
+            width: 100%;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/10/Tree-Technology-logo-by-DEEMKA-STUDIO-580x406.jpg"
+            id="logo" alt="logo">
+    </div>
+
+    <nav id="menu-bar" class="sticky">
+        <li>home</li>
+        <li>About us</li>
+        <li>Our team</li>
+        <li>client</li>
+        <li>contact us</li>
+    </nav>
+    <div id="container">
+        <h1>About us</h1>
+        <img id="about-img" src="http://saspublisher.com/wp-content/uploads/2013/02/About-Us1.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id sunt officia architecto, possimus eos voluptatum beatae eum eius et iusto in corrupti facilis excepturi nemo, dolor natus totam dolorem deserunt nostrum recusandae, perspiciatis dolorum temporibus vero? Nam harum quam asperiores nostrum obcaecati fugit beatae, repudiandae, neque aperiam aut reprehenderit cupiditate enim eius nobis ipsa odio iusto eos, impedit culpa ipsum. Amet, beatae. Sed quia distinctio cum ab quod, eum unde nostrum sapiente. Unde blanditiis temporibus ducimus nihil enim pariatur minima. Quos sint nulla quae, consequuntur voluptatum, quibusdam distinctio aliquam exercitationem praesentium nisi sequi natus ex ut cumque eos sit at quasi quisquam obcaecati repellat odit nobis! Modi laborum mollitia vero ratione vitae ipsum, veniam repellendus nulla nisi reprehenderit nesciunt at officia qui distinctio ad illum facilis obcaecati. Ab commodi, laborum vitae odio molestiae eum? Fuga repudiandae eum minima cumque numquam dolores nesciunt quisquam distinctio beatae eius pariatur sit quasi quibusdam obcaecati, suscipit est repellat quod sint earum! Inventore totam natus deserunt rerum, numquam debitis. Architecto ducimus laudantium officiis placeat corrupti! Quam quae perspiciatis itaque similique deserunt rerum excepturi fuga quos consequatur quaerat, dolor vel eos neque culpa assumenda alias? Mollitia saepe in minus placeat excepturi, tempore porro facilis a similique dolores deserunt quisquam minima eos laborum ex natus ea temporibus nostrum repellendus iusto vero. Quae quasi dolorum distinctio eum reprehenderit eveniet possimus ipsa quas aliquam saepe, consectetur cupiditate, veritatis fuga deleniti iure, id quod doloremque ducimus! Similique qui nihil magnam voluptatem velit eligendi hic error, accusamus pariatur non accusantium, laborum incidunt, temporibus vel! Perferendis commodi similique repellendus quibusdam provident facilis, veritatis saepe! Quos incidunt soluta, ab doloribus deserunt, iste minima autem culpa error distinctio rem quibusdam molestiae! Fuga, consectetur. Provident soluta, saepe aliquam beatae debitis vero odit. Quas iste officiis fuga perspiciatis accusantium modi sit non cumque. Illo eaque tenetur veniam dolorem, molestias aut reprehenderit nisi earum nobis at! Odit labore, dicta saepe necessitatibus, in qui, sed fugiat assumenda corporis amet alias veniam recusandae veritatis aspernatur ducimus earum sit. Expedita ullam consectetur eius qui esse ab laborum architecto, molestias vel alias facere nobis corrupti, necessitatibus blanditiis commodi iusto est minus doloribus rem eligendi quas! Expedita, iste hic id alias dolor doloremque quod eum molestiae. Sequi laborum eum nulla accusamus iure! Perspiciatis, alias est labore itaque ipsum esse error hic vero optio excepturi quidem pariatur quibusdam sequi dolorum rem id obcaecati autem fugit ad sit maxime provident? Ipsam minima enim asperiores obcaecati molestias. Et sit illum reprehenderit accusantium quis, rerum modi sequi voluptates deserunt repellendus ea officiis. Temporibus saepe mollitia cum et nam ratione ullam quis assumenda inventore omnis iure, repellat officia sed voluptatum maxime recusandae ducimus voluptates obcaecati ipsum numquam laborum pariatur nemo deleniti ab. Enim itaque error animi, suscipit veritatis architecto ut qui nemo similique adipisci impedit voluptas hic aperiam asperiores laudantium, excepturi pariatur perferendis repellendus? Delectus distinctio nisi commodi magnam minus. Maiores amet delectus necessitatibus itaque, distinctio facere libero, eum dolores velit exercitationem aperiam dolore aut labore error adipisci autem nisi ratione a obcaecati beatae quo et tenetur?</p>
+    </div>
+    <script>
+
+        window.addEventListener('scroll',function(){
+
+            let navbar = document.getElementById("menu-bar");
+
+            if(window.pageYOffset >=161){
+                navbar.classList.add('sticky');
+            }else{
+                navbar.claslist.remove('sticky');
+            }
+       })
+
+
+        
+    </script>
+</body>
+
+</html>

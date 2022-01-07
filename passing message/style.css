@@ -1,0 +1,81 @@
+body{
+   background-color: turquoise;
+   width:100%;
+   height:100ch;
+}
+
+
+
+
+
+/* button{
+    outline:none;
+    border:1px solid;
+    text-align: center;
+    font-size:16px;
+    font-weight: 600;
+    margin-top: 160px;
+    position: relative;
+    right: 25%;
+    padding: 8px;
+    border-radius: 2px;
+} */
+    
+
+.container{
+  background-color: peru;
+  border: 1px solid;
+  outline: teal;
+  text-align: center;
+  width: 50%;
+  line-height: 40px;
+  justify-content: center;
+  
+  padding: 130px;
+  margin: 12px;
+  margin-left: 60px;
+  }
+
+  .message{
+
+    width: 100%;
+    font-size: 25px;
+    margin-bottom: 1 rem;
+
+  }
+  .submit{
+
+
+    font-size: 20px;
+    background-color: crimson;
+    border-radius: 10px;
+}
+.submit:hover{
+  color: blue;
+  background-color: black;
+}
+/* row{
+   background: paleturquoise; 
+   border: none;
+   outline.: none;
+   text-align: center;
+   float: left;
+   margin-top: 12px;
+   padding: 13px;
+
+}
+.btn{
+    outline:none;
+    border:1px solid;
+    text-align: center;
+    font-size:16px;
+    font-weight: 600;
+    float: left;
+    background-color: palevioletred;
+    margin:12px;
+    padding: 15px;
+
+
+
+
+} */
